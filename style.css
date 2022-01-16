@@ -6,57 +6,139 @@ html {
 }
 /* styling for the navbar */
 nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	height: 5rem;
-	background-color: #ffffff;
-	position: fixed;
-	top: 0;
-	left: 0;
-	
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 6rem;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
 }
 
 .nav__logo {
-	height: 3rem;
-	margin: 3rem;
-  
+  height: 50px;
+  margin: 0 3rem 0 3rem;
 }
 
 .nav__container {
-	display: flex;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-nav a {
-	color: #ebebeb;
-	background-color: #232323;
-	font-size: 1.5rem;
-	text-decoration: none;
-	text-transform: uppercase;
-	padding: 1.25rem 5rem;
+nav li a {
+  color: #ebebeb;
+  background-color: #00154e;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 2.1rem 2rem;
 }
 
 nav a:hover {
-	color: #232323;
-	background-color: #54be90;
+  color: #232323;
+  background-color: #5dccff;
 }
-}
+
 /* introduction to the webpage */
 .introduction {
   background-image: url("img/futuristic-tech-geometry-cyan-wallpaper-preview.jpg");
   background-repeat: repeat-y;
   background-size: cover;
   background-position: center;
+  margin-top: 50px;
   box-shadow: inset 0 0 20em 3em #000;
   padding: 60px 0 60px 0;
   color: rgb(228, 96, 20);
-  text-align: center;
   text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(253, 253, 253),
     -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
   font-size: 1.5em;
 }
+.introduction__statement {
+  width: 60vw;
+  text-align: center;
+}
 
+/* process description */
+.process {
+  display: flex;
+  background-color: #00154e;
+  justify-content: space-between;
+  padding: 6rem 15% 3rem 15%;
+  color: white;
+}
+
+.process__item {
+  width: 20%;
+  font-size: 1.25rem;
+  text-align: center;
+  position: relative;
+}
+
+.process__circle {
+  width: 8rem;
+  height: 8rem;
+  background-color: white;
+  border-radius: 50%;
+}
+/* skills description with progress bars */
+
+.skills--container {
+  display: flex;
+  align-items: center;
+}
+
+.skills--language {
+  background-color: darkslategray;
+  padding: 10px;
+}
+
+.skills--language__progress {
+  background-color: darkturquoise;
+  width: 80%;
+}
+/* portfolio description */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio__item {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+article img {
+  width: 200px;
+}
+
+/* the about section */
+.about {
+  display: flex;
+  background-color: #00154e;
+}
+
+.about__profile-photo img {
+  border-radius: 25%;
+  width: 300px;
+}
+
+.about__description {
+  color: white;
+}
+
+/* contact form */
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form__button {
+}

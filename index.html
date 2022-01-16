@@ -13,11 +13,10 @@
 </head>
 <body>
   <nav>
-      
-        <ul>
-    <li class="logo"><img src="img/lcd-logo.svg" alt="Logo Lou Cyan Designs"></li>
+   <img src="img/lcd-logo.svg" alt="Logo Lou Cyan Designs" class="nav__logo"> 
+        <ul class="nav__container">
     <li><a href="#introduction">home</a></li>
-    <li><a href="#process">skills</a></li>
+    <li><a href="#skills">skills</a></li>
     <li><a href="#portfolio">portfolio</a></li>
     <li><a href="#about">about me</a></li>
     <li><a href="#contact">contact</a></li>
@@ -26,32 +25,32 @@
   </nav>
 
   <section class="introduction" id="introduction">
-    <h1>Welcome to <br> </strong> <u> Lou Cyan Designs </u> </strong></h1>  
+    <h1>Welcome to <br> <strong> <u> L.C. Designs </u> </strong></h1>  
     <h2>My name is <strong>Lucian Nguyen.</strong></h2>
       <h3>I'm a Full-stack Web Developer</h3>
   </section>
 
-  <p>Let's work together to make <strong>your product stand out.</strong> I create beautiful and functional websites.
+  <p class="process__statement">Let's work together to make <strong>your product stand out.</strong> I create beautiful and functional websites.
 I work with my clients step by step from the idea stage to the fully functioning web application.</p>
 
   <section class="process">
-<div>
-    <div class="body--section__process__circle"></div>
+<div class="process__item">
+    <div class="process__circle"></div>
     <h3>Discover</h3>
     <p>Tell me about your project and we brainstorm together the features to create a plan for your product to launch.</p>
 </div>
-<div>
-    <div class="body--section__process__circle"></div>
+<div class="process__item">
+    <div class="process__circle"></div>
     <h3>Design</h3>
     <p>We design the wireframe and agree together how to create the best experience for your users to present your brand.</p>
 </div>
-<div>
-    <div class="body--section__process__circle"></div>
+<div class="process__item">
+    <div class="process__circle"></div>
     <h3>Deploy</h3>
     <p>We protoype and develop your product. We work together intensely to incorporate your feedback.</p>
 </div>
-<div>
-    <div class="body--section__process__circle"></div>
+<div class="process__item">
+    <div class="process__circle"></div>
     <h3>Be Ready</h3>
     <p>We deploy your product and now your website is ready to get the traction. Get out there and grow your audience.</p>
 </div>
@@ -59,12 +58,29 @@ I work with my clients step by step from the idea stage to the fully functioning
 
   <section class="skills" id="skills">
 <h1>MY SKILLS</h1>
+    <div class="skills--container">
+        <div class="skills--language">HTML</div>
+        <div class="skills--language__progress">g</div>
+        <div>80%</div>
+
+
+    </div>
+
+        <div class="skills--container">
+            <div class="skills--language">CSS, Sass</div>
+            <div class="skills--language__progress">g</div>
+            <div>80%</div>
+        
+        
+        </div>
+
 
   </section>
+<h1>MY PORTFOLIO</h1>
 
   <section class="portfolio" id="portfolio">
-      <h1>MY PORTFOLIO</h1>
-    <article>
+      
+    <article class="portfolio__item">
         <img src="img/shrug.png" alt="project-image">
         <div>
             <p>Static website for a fitness center</p>
@@ -72,7 +88,7 @@ I work with my clients step by step from the idea stage to the fully functioning
         </div>
     </article>
 
-    <article>
+    <article class="portfolio__item">
         <img src="img/shrug.png" alt="project-image">
         <div>
             <p>Static website for a fitness center</p>
@@ -80,7 +96,7 @@ I work with my clients step by step from the idea stage to the fully functioning
         </div>
     </article>
 
-    <article>
+    <article class="portfolio__item">
         <img src="img/shrug.png" alt="project-image">
         <div>
             <p>Static website for a fitness center</p>
@@ -88,7 +104,7 @@ I work with my clients step by step from the idea stage to the fully functioning
         </div>
     </article>
 
-    <article>
+    <article class="portfolio__item">
         <img src="img/shrug.png" alt="project-image">
         <div>
             <p>Static website for a fitness center</p>
@@ -96,7 +112,7 @@ I work with my clients step by step from the idea stage to the fully functioning
         </div>
     </article>
 
-    <article>
+    <article class="portfolio__item">
         <img src="img/shrug.png" alt="project-image">
         <div>
             <p>Static website for a fitness center</p>
@@ -104,7 +120,7 @@ I work with my clients step by step from the idea stage to the fully functioning
         </div>
     </article>
 
-    <article>
+    <article class="portfolio__item">
         <img src="img/shrug.png" alt="project-image">
         <div>
             <p>Static website for a fitness center</p>
@@ -113,20 +129,40 @@ I work with my clients step by step from the idea stage to the fully functioning
     </article>
 
   </section>
+  <h1>ABOUT ME</h1>
+
   <section class="about" id="about">
-      <h1>ABOUT ME</h1>
-  </section>
+      <div class="about__profile-photo"><img src="img/profile-photo.jpg" alt=""></div>
+      <div class="about__description"><p><strong>My name is Aneta Webbie.</strong> I am a full-stack web developer and enjoy learning new trends. <strong>I am
+            developing user interfaces in JavaScript and React and backend of my projects in PHP and Laravel.</strong></p>
+    <p>I am open to learning new technologies and enjoy working with people <span class="about__underline">who are as
+            passionate about all web-related as me</span>.</p>
+    <p>I have worked for clients all across the world but currently I am based in Prage, Czech Republic.</p>
+    <p>I like cats, gaming, and snowboarding. If I do not develop, you can also meet me trekking in the mountains.</p></div>
+    </section>
 
   <section class="social" id="social">
       <h3>FIND ME HERE</h3>
   </section>
-
+<h1>CONTACT ME</h1>
   <section class="form" id="form">
-      <h1>CONTACT ME</h1>
+      <form type = "form">
+        <input type="text" name="first-name" placeholder="First Name *" class="form__input" />
+        <input type="text" name="last-name" placeholder="Last Name *" class="form__input" />
+        <input type="email" name="email" placeholder="Email *" class="form__input" />
+        <input type="text" name="phone" placeholder="Phone" class="form__input" />
+        <label class="form-label">My message *</label>
+        <textarea rows="6" class="form__textarea"></textarea>
+        <button class="form__button">Send my message</button>
+
+      </form>
+      
   </section>
 </body>
 
 <footer>
 <h1>Nice to meet you!</h1>
+
+Copyright @Lucian Nguyen 2022
 </footer>
 </html>
